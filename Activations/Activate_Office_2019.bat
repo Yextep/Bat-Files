@@ -1,6 +1,6 @@
 @echo off
-color 02
 @REM ---------- EJECUTAR COMO ADMINISTRADOR ---------------
+color 02
 title KMS Activator for Microsoft Office 2019 &cls&echo ************************************************* &Activador office2019&echo ************************************************* &echo.&echo Supported products:&echo Microsoft Office Standard 2019&echo Microsoft Office Professional 2019&echo.&echo Microsoft Office 2019 activation...
 (if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\proplusvl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\proplus2019vl*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
 cscript //nologo ospp.vbs /unpkey:6MWKP >nul&
