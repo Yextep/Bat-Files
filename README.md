@@ -5,7 +5,7 @@
 
 Efectivamente, su utilidad apenas difiere de la de un **Script de PowerShell** o de Bash (en el caso de que uses WSL/Linux), sólo que en el caso de los **BAT** el encargado de ejecutarlo será **CMD.EXE**, también conocido como el **'Símbolo del Sistema'**.[Leer Más](https://es.wikipedia.org/wiki/Archivo_batch) 
 
-<img align="center" height="524" width="1000" alt="GIF" src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/3ef8d293-9c0a-477e-a1e1-42a45c5cb4f8"/>
+<img align="center" height="480" width="1000" alt="GIF" src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/3ef8d293-9c0a-477e-a1e1-42a45c5cb4f8"/>
 
 ## 💡 Cómo crear un batch?
 La respuesta es muy sencilla, creamos un **Documento de texto** plano. Como el documento de texto es una hoja en blanco donde ni siquiera se le 
